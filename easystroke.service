@@ -1,0 +1,10 @@
+[Unit]
+Description=Easystroke
+Documentation=man:easystroke
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/easystroke
+
+[Install]
+WantedBy=xinitrc.target

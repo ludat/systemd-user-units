@@ -1,0 +1,11 @@
+[Unit]
+Description=Compton X11 compositor
+Documentation=man:compton(1)
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/compton -G -I 0.05 -O 0.05 -D 5
+Conflicts=xcompmgr.service cairo-compmgr.service
+
+[Install]
+WantedBy=xinitrc.target

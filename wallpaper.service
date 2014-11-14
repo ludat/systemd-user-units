@@ -1,0 +1,12 @@
+[Unit]
+Description=Wallpaper
+Documentation=man:feh(1)
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStart=/usr/bin/feh --bg-fill TinyGalaxy.jpg
+WorkingDirectory=%h/Images/Wallpapers/
+
+[Install]
+WantedBy=xmonad.service

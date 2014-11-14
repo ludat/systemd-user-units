@@ -1,0 +1,13 @@
+[Unit]
+Description=Xinitrc stuff
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/xsetroot -cursor_name left_ptr
+ExecStart=/usr/bin/xrdb -merge %h/.Xresources
+ExecStart=/usr/bin/numlockx on
+ExecStart=/usr/bin/synclient TouchpadOff=1
+RemainAfterExit=Yes
+
+[Install]
+WantedBy=xinitrc.target

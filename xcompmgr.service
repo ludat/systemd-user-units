@@ -1,0 +1,11 @@
+[Unit]
+Description=Xcompmgr X11 compositor
+Documentation=man:xcompmgr(1)
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/xcompmgr
+Conflicts=cairo-compmgr.service compton.service
+
+[Install]
+WantedBy=xmonad.service

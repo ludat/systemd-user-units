@@ -1,0 +1,9 @@
+[Unit]
+Description=urxvt daemon server
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/urxvtd -q -o
+
+[Install]
+WantedBy=xinitrc.target

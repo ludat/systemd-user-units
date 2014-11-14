@@ -1,0 +1,10 @@
+[Unit]
+Description=Google chrome browser
+
+[Service]
+Type=simple
+MemoryLimit=3584M
+ExecStart=/usr/bin/google-chrome-stable
+
+[Install]
+WantedBy=xinitrc.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=cairo-xcompmgr X11 compositor
+Documentation=man:cairo-compmgr(1)
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/cairo-compmgr
+Conflicts=xcompmgr.service compton.service
+
+[Install]
+WantedBy=xinitrc.target

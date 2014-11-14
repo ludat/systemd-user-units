@@ -1,0 +1,10 @@
+[Unit]
+Description=My awesome python status bar engine
+
+[Service]
+Type=simple
+ExecStart=/home/lucas/.config/SB/start.sh
+WorkingDirectory=/home/lucas/.config/SB/
+
+[Install]
+WantedBy=xmonad.service
