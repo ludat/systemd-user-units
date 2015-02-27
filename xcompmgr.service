@@ -5,7 +5,7 @@ Documentation=man:xcompmgr(1)
 [Service]
 Type=simple
 ExecStart=/usr/bin/xcompmgr
-Conflicts=cairo-compmgr.service compton.service
 
 [Install]
+Conflicts=cairo-compmgr.service compton.service
 WantedBy=xmonad.service
