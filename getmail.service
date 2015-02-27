@@ -1,0 +1,7 @@
+[Unit]
+Description=Get mail
+RefuseManualStop=yes
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/getmail

@@ -1,0 +1,10 @@
+[Unit]
+Description=Get mail every five minutes
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=5min
+Persistent=False
+
+[Install]
+WantedBy=timers.target
