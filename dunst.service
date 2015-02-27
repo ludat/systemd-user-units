@@ -1,0 +1,10 @@
+[Unit]
+Description=Dunst, notification daemon
+Documentation=man:dunst
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/dunst
+
+[Install]
+WantedBy=xmonad.service
